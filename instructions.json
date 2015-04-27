@@ -1,0 +1,17 @@
+{
+	"main_script": "osm3d.js",
+	"icon": "openstreetmap.webp",
+	"width": 1400,
+	"height": 600,
+	"resize": "free",
+	"dependencies": [
+      "lib/leaflet/leaflet.js",
+      "lib/tangram/tangram.min.js"
+	],
+	"title": "OpenStreetMap 3D",
+	"version": "1.0.0",
+	"description": "OpenStreetMap 3D map visualization using WebGL graphics",
+	"keywords": [ "maps", "openstreetmaps", "geo" ],
+	"author": "Pavel Zbytovsky <zbytovsky@gmail.com>",
+	"license": "SAGE2-Software-License"
+}
