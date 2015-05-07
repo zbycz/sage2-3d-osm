@@ -43,10 +43,10 @@ var osm3d = SAGE2_App.extend({
 		this.allLoaded = 0;
 	},
 
-	init: function (id, width, height, resrc, date) {
+	init: function(data) {
 
 		// call super-class 'init'
-		arguments.callee.superClass.init.call(this, id, "div", width, height, resrc, date);
+		arguments.callee.superClass.init.call(this, "div", data);
 
 		var map_start_location = {
 			'London': [51.508, -0.105, 15],
@@ -61,10 +61,10 @@ var osm3d = SAGE2_App.extend({
 		var width = this.element.clientWidth;
 		var height = this.element.clientHeight;
 
-		this.element.id = "div" + id;
+		this.element.id = "div" + data.id;
 
 		// for SAGE2
-		this.lastZoom = date;
+		this.lastZoom = data.date;
 		this.dragging = false;
 		this.position = {x: 0, y: 0};
 
